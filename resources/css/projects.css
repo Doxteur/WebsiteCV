@@ -1,0 +1,166 @@
+body {
+    overflow-y: scroll;
+}
+
+#main {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-left: 125px;
+    zoom: 0.8;
+}
+
+.all {
+    transition: all 0.5s;
+}
+
+#main div:not(.competence):not(.description) {
+    margin: 75px 30px 75px 30px;
+    background-color: white;
+    box-shadow: 1px 1px 3px black;
+}
+
+#main div img {
+    width: 350px;
+    height: 250px;
+}
+
+.active {
+    transition: all 0.5s;
+    border-radius: 15px;
+    background-color: #55BAA2;
+    color: white;
+}
+
+.competence {
+    display: flex;
+    text-align: center;
+}
+
+#main h3 {
+    margin: 15px;
+    padding: 5px;
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    border-radius: 35px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#chooseType {
+    display: flex;
+    cursor: pointer;
+    padding-top: 70px;
+    justify-content: center;
+    width: 100%;
+}
+
+#chooseType h1 {
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 15px;
+    padding: 5px 20px 5px 20px;
+}
+
+#chooseType #active {
+    background-color: #55BAA2;
+    border-radius: 15px;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    #main {
+        margin-left: 0;
+    }
+    #chooseType h1 {
+        margin: 0;
+    }
+}
+
+.description {
+    opacity: 0;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background-color: #55BAA2;
+    transition: opacity ease-out 0.5s;
+}
+
+.description:hover {
+    opacity: 100;
+}
+
+.description h1 {
+    height: 90%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 15px;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+}
+
+
+/* Language Color */
+
+.HTML {
+    background-color: #DD4B25;
+}
+
+.CSS {
+    background-color: #1578BA;
+}
+
+.JS {
+    background-color: #E6C72F;
+}
+
+.Csharp {
+    background-color: #9668D9;
+}
+
+.Unity {
+    background-color: #212B35;
+}
+
+.Jquery {
+    background-color: #55BAA2;
+}
+
+.Photon {
+    background-color: #2B8FD8;
+}
+
+.SocketIo {
+    background-color: black;
+}
+
+.NodeJs {
+    background-color: #8CBF3D;
+}
+
+.hidden {
+    display: none;
+}
+
+#voirplus {
+    width: 100%;
+}
+
+#voirplus h1 {
+    cursor: pointer;
+    margin: auto;
+    background-color: #55BAA2;
+    width: fit-content;
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+#ProjectSection {
+    height: fit-content;
+}
